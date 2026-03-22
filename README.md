@@ -1,5 +1,5 @@
 # Social-Media-Backend-System
-A backend service that powers an Instagram-like social media platform using RESTful APIs.
+- A backend service that powers an Instagram-like social media platform using RESTful APIs.
 
 <<<<<<< HEAD
 Steps to run the server:
