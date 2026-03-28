@@ -79,5 +79,5 @@ app.delete("/post/:id", (req, res) => {
 
 
 app.listen(port, ()=> {
-    console.log("listening to the port : 8080")
+    console.log(`listening on port ${port}`);
 });
