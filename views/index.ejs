@@ -13,21 +13,25 @@
             <h3 class="user">@<%= post.username %></h3>
             <h4 class="content"><%= post.content %></h4>
             <br>
-            <a href="http://localhost:8080/posts/<%= post.id %>">See in detail</a>
-            <br>
-            <br>
-            <a href="http://localhost:8080/posts/<%= post.id %>/edit">Edit</a>
-            <br>
-            <br>
-            <form method="post" action="/post/<%= post.id %>?_method=DELETE"">
+
+            <!-- ✅ FIXED (removed localhost) -->
+            <a href="/posts/<%= post.id %>">See in detail</a>
+            <br><br>
+
+            <!-- ✅ FIXED -->
+            <a href="/posts/<%= post.id %>/edit">Edit</a>
+            <br><br>
+
+            <!-- ✅ FIXED route + removed extra quote -->
+            <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
                 <button>Delete Post</button>
             </form>
-            
         </div>
     <% } %>
 
-    <br>
-    <br>
-    <a href="http://localhost:8080/posts/new">Create new post</a>
+    <br><br>
+
+    <!-- ✅ FIXED -->
+    <a href="/posts/new">Create new post</a>
 </body>
 </html>
